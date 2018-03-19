@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="checkbox.cursoandroid.com.checkbox.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="34dp"
+        android:text="Quanto Animais tem?"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxCaoId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCaoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Cão"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxGatoId"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGatoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Gato"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxPapagaioId"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxCaoId"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCaoId" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPapagaioId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:text="Papagaio"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textoExibicaoId"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxGatoId"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGatoId" />
+
+    <Button
+        android:id="@+id/btnMostraId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoExibicaoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:text="Mostrar..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPapagaioId" />
+</android.support.constraint.ConstraintLayout>
